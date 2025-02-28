@@ -8,14 +8,6 @@ import {Card, CardContent, CardHeader, CardTitle} from "@/components/ui/card";
 
 const Hero = () => {
 
-    const scrollToSection = (e: React.MouseEvent<HTMLAnchorElement, MouseEvent>, id: string) => {
-        e.preventDefault();
-        const element = document.getElementById(id);
-        if (element) {
-            element.scrollIntoView({ behavior: 'smooth' });
-        }
-    };
-
     return (
         <main>
             <section className={"relative min-h-screen flex items-center pt-20"}>
