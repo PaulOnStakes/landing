@@ -1,4 +1,3 @@
-import React from 'react';
 import {Code} from "lucide-react";
 import Link from "next/link";
 import {Button} from "@/components/ui/button";
