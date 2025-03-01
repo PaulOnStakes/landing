@@ -1,4 +1,3 @@
-import React from 'react';
 import {Button} from "@/components/ui/button";
 import Link from "next/link";
 import { Badge } from "@/components/ui/badge"
@@ -99,7 +98,7 @@ const Hero = () => {
                                 </CardTitle>
                             </CardHeader>
                             <CardContent>
-                                <p className={"text-muted-foreground"}>Optimized for speed and performance, ensuring visitors don't leave due to slow loading times.</p>
+                                <p className={"text-muted-foreground"}>Optimized for speed and performance, ensuring visitors don&apos;t leave due to slow loading times.</p>
                             </CardContent>
                         </Card>
                         <Card>
