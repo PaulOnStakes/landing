@@ -15,32 +15,32 @@ const Header = () => {
 
                     <nav className={"hidden md:flex items-center gap-8"}>
                         <Link href={"#services"}>
-                            <Button variant={"link"} className={"hover:text-red-500 transition-colors"}>
+                            <Button variant={"link"} className={"hover:text-yellow-500 transition-colors text-md font-semibold"}>
                                 Services
                             </Button>
                         </Link>
                         <Link href={"#process"}>
-                            <Button variant={"link"} className={"hover:text-red-500 transition-colors"}>
+                            <Button variant={"link"} className={"hover:text-blue-500 transition-colors text-md font-semibold"}>
                                 Process
                             </Button>
                         </Link>
                         <Link href={"#pricing"}>
-                            <Button variant={"link"} className={"hover:text-red-500 transition-colors"}>
+                            <Button variant={"link"} className={"hover:text-purple-500 transition-colors text-md font-semibold"}>
                                 Pricing
                             </Button>
                         </Link>
                         <Link href={"#portfolio"}>
-                            <Button variant={"link"} className={"hover:text-red-500 transition-colors"}>
+                            <Button variant={"link"} className={"hover:text-red-500 transition-colors text-md font-semibold"}>
                                 Portfolio
                             </Button>
                         </Link>
                         <Link href={"#contact"}>
-                            <Button variant={"link"} className={"hover:text-red-500 transition-colors"}>
+                            <Button variant={"link"} className={"hover:text-red-500 transition-colors text-md font-semibold"}>
                                 Contact
                             </Button>
                         </Link>
                         <Link href={"#contact"}>
-                            <Button className={"bg-red-500 hover:bg-red-600 transition-colors animate-wiggle"}>
+                            <Button className={"bg-red-500 hover:bg-red-600 transition-colors animate-wiggle text-md font-semibold"}>
                                 Get Started
                             </Button>
                         </Link>
