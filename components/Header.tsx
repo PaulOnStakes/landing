@@ -29,11 +29,11 @@ const Header = () => {
                                 Pricing
                             </Button>
                         </Link>
-                        <Link href={"#portfolio"}>
-                            <Button variant={"link"} className={"hover:text-red-500 transition-colors text-md font-semibold"}>
-                                Portfolio
-                            </Button>
-                        </Link>
+                        {/*<Link href={"#portfolio"}>*/}
+                        {/*    <Button variant={"link"} className={"hover:text-red-500 transition-colors text-md font-semibold"}>*/}
+                        {/*        Portfolio*/}
+                        {/*    </Button>*/}
+                        {/*</Link>*/}
                         <Link href={"#contact"}>
                             <Button variant={"link"} className={"hover:text-red-500 transition-colors text-md font-semibold"}>
                                 Contact

@@ -46,21 +46,35 @@ const Pricing = () => {
 
 
     return (
-        <section className={"relative min-h-screen flex items-center pt-20"}>
+        <section id={"pricing"} className={"relative min-h-screen flex items-center pt-20"}>
+
+            {/* Background pattern */}
+            <div className="absolute inset-0 pointer-events-none -z-50 bg-gradient-to-b from-purple-50 to-purple-100">
+                <div
+                    className="absolute inset-0"
+                    style={{
+                        backgroundImage: `radial-gradient(rgba(0,0,0,0.05) 2px, transparent 2px)`,
+                        backgroundSize: "30px 30px",
+                        mask: "radial-gradient(circle at center, black, transparent 70%)",
+                        WebkitMask: "radial-gradient(circle at center, black, transparent 70%)",
+                    }}
+                />
+            </div>
+
             <div
-                className={"absolute top-20 right-10 w-64 h-64 bg-red-500/20 rounded-full blur-3xl animate-pulse"}/>
+                className={"absolute top-20 right-10 w-64 h-64 bg-purple-300/20 rounded-full blur-3xl"}/>
             <div
-                className={"absolute bottom-40 left-30 w-80 h-80 bg-sky-300/20 rounded-full blur-3xl animate-pulse"}/>
+                className={"absolute bottom-40 left-30 w-80 h-80 bg-purple-300/20 rounded-full blur-3xl"}/>
             <div className={"max-w-3xl mx-auto text-center"}>
-                <Badge variant="secondary">
+                <Badge  className={"bg-purple-200 text-purple-500 border-purple-500"}>
                         <span
-                            className={"inline-block w-2 h-2 rounded-full bg-purple-500 mr-2 animate-ping opacity-75"}></span>
+                            className={"inline-block w-2 h-2 rounded-full bg-purple-500 mr-2 opacity-75"}></span>
                     Pricing Plans
                 </Badge>
 
-                <h1 className={"text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight mb-6 animate-in"}>Simple,
-                    transparent pricing</h1>
-                <p className={"text-xl md:text-2xl text-muted-foreground mb-10 animate-in"}>Choose the perfect plan for
+                <h1 className={"text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight mb-6"}>Simple,
+                    <span className={"text-purple-500"}> transparent</span> pricing</h1>
+                <p className={"text-xl md:text-2xl text-muted-foreground mb-10"}>Choose the perfect plan for
                     your business needs. No hidden fees or surprises.</p>
                 <div className={"grid grid-cols-1 lg:grid-cols-2 gap-16 items-center"}>
                     {
@@ -71,7 +85,7 @@ const Pricing = () => {
                                         plan.popular &&
                                         <Badge variant={"secondary"} className={"border-purple-500 border-2 bg-purple-200 text-purple-500"}>
                                             <span
-                                                className={"inline-block w-2 h-2 rounded-full bg-purple-500 mr-2 animate-ping opacity-75"} />
+                                                className={"inline-block w-2 h-2 rounded-full bg-purple-500 mr-2 opacity-75"} />
                                             Most Popular
                                         </Badge>
                                     }
@@ -109,7 +123,7 @@ const Pricing = () => {
                                 </CardContent>
                                 <CardFooter>
                                     <Link href={"#contact"} className={"w-full"}>
-                                        <Button variant={plan.popular ? "default" : "outline"} className={`w-full ${plan.popular ? 'bg-purple-500 hover:bg-purple-600 animate-bounce' : ''}`}>
+                                        <Button variant={plan.popular ? "default" : "outline"} className={`w-full ${plan.popular ? 'bg-purple-500 hover:bg-purple-600' : ''}`}>
                                             {plan.cta}
                                         </Button>
                                     </Link>
