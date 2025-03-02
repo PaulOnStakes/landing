@@ -1,6 +1,5 @@
 "use client";
 
-import React from 'react';
 import {Badge} from "@/components/ui/badge";
 import {Card, CardContent, CardDescription, CardHeader, CardTitle} from "@/components/ui/card";
 import { Button } from "@/components/ui/button"
@@ -18,7 +17,7 @@ import { zodResolver } from "@hookform/resolvers/zod"
 import { useForm } from "react-hook-form"
 import {z} from "zod";
 import {Textarea} from "@/components/ui/textarea";
-import {Mail, MapPin, Phone } from 'lucide-react';
+import {Mail, MapPin, Phone } from "lucide-react";
 
 const formSchema = z.object({
     name: z.string().min(2, {
@@ -76,15 +75,15 @@ const Contact = () => {
                 </Badge>
                 <h1 className={"text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight mb-6"}>Get
                     in <span className={"text-red-500"}>touch</span></h1>
-                <p className={"text-xl md:text-2xl text-muted-foreground mb-10"}>Have a project in mind? Let's discuss how we can help bring your vision to life.</p>
+                <p className={"text-xl md:text-2xl text-muted-foreground mb-10"}>Have a project in mind? Let&apos;s discuss how we can help bring your vision to life.</p>
                 <div className={"flex justify-center"}>
                     <Card className={"rounded-r-none border-r-0 w-1/2 text-left"}>
                         <CardHeader>
                             <CardTitle className={"text-2xl font-bold"}>
-                                Let's build <span className={"text-red-500"}>your website</span>
+                                Let&apos;s build <span className={"text-red-500"}>your website</span>
                             </CardTitle>
                             <CardDescription className={"text-md"}>
-                                Fill out the form below and we'll get back to you within 24 hours to discuss your project.
+                                Fill out the form below and we&apos;ll get back to you within 24 hours to discuss your project.
                             </CardDescription>
                         </CardHeader>
                         <CardContent>
